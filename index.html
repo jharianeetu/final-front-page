@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+header {
+  align-items: center;
+  display: flex;
+  font-size: 18px;
+  height: 100vh;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  transform-style: preserve-3d;
+  perspective: 100px;
+}
+
+header:before {
+  animation: fade-slide-down 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.8)),
+              url(https://cssanimation.rocks/levelup/public/images/background.jpg) no-repeat bottom;
+  background-size: cover;
+  content: "";
+  opacity: 0;
+  position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  z-index: -1;
+}
+
+header:after {
+  animation: rotate-up .5s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
+  background: #F9FCFF;
+  content: "";
+  height: 40rem;
+  left: -5%;
+  position: absolute;
+    right: -5%;
+    top: 90%;
+  transform-origin: 0 0;
+  z-index: 0;
+}
+
+.header-title, .header-subtitle {
+  color: #fff;
+}
+
+.header-subtitle {
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+}
+
+.header-button {
+  transform: translateZ(.1px);
+  position: relative;
+  z-index: 10;
+}
+
+.animate-pop-in {
+  animation: pop-in .6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+  opacity: 0;
+}
+
+.rocky-dashed {
+  animation-delay: .6s;
+}
+
+.header-title {
+  animation-delay: .8s;
+}
+
+.header-subtitle {
+  animation-delay: 1s;
+}
+
+.header-button {
+  animation-delay: 1.1s;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: DarkSalmon;
+  color: white;
+  background: url('https://lh3.googleusercontent.com/V02y3JlbGDGfvflyayVIQ4zRy71KOJk7YYmlAhvHtCwUqHgR9xz_ydNe9h1ghH3EUP0fGsTTGOdJzOf-oXfTCurI-8k4WHi6DUh0lq22LYTUmqQPUlxHILaNHAXKHcgpZFonKquHOtc=w2400');
+}
+
+/* Animations */
+
+@keyframes fade-slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem) scale(.8);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes rotate-up {
+  100% {
+    transform: rotateZ(-4deg);
+  }
+}
+.sec1 {
+
+  max-width: 800px;
+  margin: auto;
+  background: url('https://lh3.googleusercontent.com/36iiKdrRNqwow2VhOu1drDxuF-1qPaXc2sdJJq2RhF0wD5BCArwfqvxQneeIfThlWWRAMk7PPCuX460cQSF1gSjP2iytzthNsUoRD44i98lnRudefA5BAhFgnngDMg7A13VNwC9gvMg=w2400');
+  padding: 10px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+h2{
+text-align: center
+}
+</style>
+  
+</head>
+<body style="background-color:	#FFF8DC;">
+  
+<header >
+  <section class="header-content">
+    <img class="rocky-dashed animate-pop-in" src="https://cssanimation.rocks/levelup/public/images/rocky-dashed.svg">
+    <h1 class="header-title animate-pop-in">Revolution in Web Development</h1>
+    <h3 class="header-subtitle animate-pop-in">“A website without visitors is like a ship lost in the horizon.”
+– Dr. Christopher Dayagdag
+</h3>
+
+  </section>
+</header>
+    <h1 style =" text-align: center;">Features of Web Development...</h1>
+    
+<section style="background-color:#FFDEAD;width:25%;float:left;height:200px" >
+<h2 style =" text-align: center;">Good Web Design</h2>
+
+<p style="text-align:center;">
+The website design must be simple and professional. Creating a simple and interface for the users will definitely pay off.
+</p>
+
+
+</section>
+<section style="background-color:#F5DEB3;width:25%;float:left;height:200px" >
+<h2 style =" text-align: center;">User-friendly navigation</h2>
+
+<p style="text-align:center;">
+The web development allows us to creat user friendly applications and website. Also allows to user friendly navigations.
+</p>
+</section>
+<section style="background-color:#DEB887;width:25%;float:left;height:200px" >
+<h2 style =" text-align: center;">Web Compatibility</h2>
+
+<p style="text-align:center;">
+The web development also allows us to creat websites i.e. compatible to run across for different browsers and devices.
+</p>
+</section>
+
+<section style="background-color:#D2B48C;width:25%;float:left;height:200px" >
+<h2 style =" text-align: center;">User-friendly navigation</h2>
+
+<p style="text-align:center;">
+The web development allows us to creat user friendly applications and website. Also allows to user friendly navigations.
+</p>
+</section>
+<br>
+    <h1 style =" text-align: center;">Milestone in Web Development</h1>
+    
+<section style="background-color:#FFDEAD;width:33.2%;float:left;height:300px" >
+<h2> <a href="https://jharianeetu.github.io/history-/">History</a></h2>
+
+<p style="text-align:center;">
+The rise of the internet within mainstream culture is largely correlated with its history as a visual medium. Like many other computer systems and applications, it took a graphic interface to get the general population to start to understand the internet’s potential. The personal computer would not have proliferated throughout our households and work environments without the display monitor, and still did not become widely used until electronic spreadsheets, word processors and video games started attracting users. Similarly, users did not start buy....
+</p>
+
+
+</section>
+<section style="background-color:#F5DEB3;width:33.2%;float:left;height:300px" >
+<h2> <a href="https://jharianeetu.github.io/Before-2000-/">Before 2000</a></h2>
+
+<p style="text-align:center;">
+When we were first introduced to the internet IT departments built and managed the majority of websites due to the complexity of the programming. Today, website design has become an industry all on it's own. Great web designs have lead some businesses to grow and prosper. While bad web presences lead others to fail. Your website is much more than a validation tool. Today's web designs require more than great image placement. Designers much consider load speed, content placement and SEO optimization. Not to mention designers must now consider ....
+</p>
+</section>
+<section style="background-color:#DEB887;width:33.2%;float:left;height:300px" >
+<h2> <a href="https://jharianeetu.github.io/After-2000/">After 2000</a></h2>
+
+<p style="text-align:center;">
+The internet is a relatively new invention but since it’s birth, it has changed the way we live. It has spawned hundreds of new industries, dramatically improved communication times, and created millions of new jobs, particularly in developing nations.
+
+One of those hundreds of new industries that are responsible for thousands of jobs is website design: the process of designing and building websites. This industry has evolved along with the development of the internet. Website design capabilities were severely limited due to browser constraints ....
+</p>
+</section>
+
+<footer style="background-color:yellow;width:100%;float:left;height:70px" >
+  <p>© Design & Developed by:Neetu Jharia<br>
+  <a href="mailto:hege@example.com">jharianeetu</a></p>
+</footer>
+
+</body>
+
+</html>
